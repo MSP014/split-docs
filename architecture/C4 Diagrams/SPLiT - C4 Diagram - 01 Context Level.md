@@ -1,7 +1,5 @@
-```markdown
 ```mermaid
 
----
 C4Context
 System_Boundary(b1, "Users") {
     Person(user, "Private Investor", "Uses SPLiT for long-term investment analysis")
@@ -100,6 +98,7 @@ UpdateRelStyle(SPLIT, messengerIn, $textColor="#5000A0", $lineColor="#5000A0", $
 UpdateRelStyle(SPLIT, emailInput, $textColor="#5000A0", $lineColor="#5000A0", $offsetX="60", $offsetY="880")
 
 UpdateRelStyle(SPLIT, webscraping, $textColor="#CB5703", $lineColor="#CB5703", $offsetX="50", $offsetY="1060")
+```
 
 
 UpdateLayoutConfig($c4ShapeInRow="5", $c4BoundaryInRow="1")
