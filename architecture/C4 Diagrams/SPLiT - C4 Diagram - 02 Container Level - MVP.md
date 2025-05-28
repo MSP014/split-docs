@@ -1,3 +1,4 @@
+```mermaid
 C4Container
 title SPLiT — Container Diagram
 
@@ -87,3 +88,4 @@ UpdateElementStyle(split_events,     $bgColor="#D7A500")
 UpdateElementStyle(split_math_core,  $bgColor="#4E4E4E")
 
 UpdateLayoutConfig($c4ShapeInRow="5", $c4BoundaryInRow="1")
+```
