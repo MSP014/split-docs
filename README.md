@@ -1,60 +1,65 @@
 # SPLiT — Documentation Repository
 
-Этот репозиторий содержит документацию к проекту **SPLiT** (Strategic Performance & Long-term Investment Toolkit) — аналитическому ассистенту для долгосрочного инвестирования.  
-Он создан для предварительного ознакомления с архитектурой, концепцией и методологией проекта.
+This repository contains the core documentation for **SPLiT** — the **Strategic Performance & Long-term Investment Toolkit**.  
+SPLiT is a data-driven assistant designed to support long-term investment decisions.  
+This repo is intended as a first look into the project’s architecture, concept, and methodology.
 
 ---
 
-## 📁 Структура
+## 📁 Structure
 
-### `architecture/` — Архитектура проекта
+### `architecture/` — Project Architecture
 - **`C4 Diagrams/`**  
-  Визуальное представление архитектуры:
-  - Контекстная диаграмма (`Context Level`)
-  - Диаграмма контейнеров для MVP (`Container Level - MVP`)
+  Visual representation of the system design:
+  - Context-Level Diagram
+  - Container-Level Diagram (focused on MVP)
 
 - **`decisions/`**  
-  Architectural Decision Records (ADR) — ключевые проектные [решения](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/README.md).
+  Architectural Decision Records ([ADR](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/README.md)) documenting key design choices.
 
-  Не все из создавались в хронологически обоснованном порядке. В них я отражаю своё видение архитектруных решений, а также, например, [минимальный набор модулей](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/20250528-initial-module-set-for-the-mvp.md), который будет реализован на старте
+  Not all decisions were made in strict chronological order — ADRs reflect the evolving design logic and architectural vision.  
+  For example: the [initial MVP module set](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/20250528-initial-module-set-for-the-mvp.md).
 
 - **`project_structure.md / project_structure_ASCII.txt`**  
-  Актуальная структура папок и файлов проекта, в том числе с Peewee ORM.
+  Current folder and file layout, including ORM layer (Peewee).
 
 ---
 
-### `concepts/` — Концепция и философия
-- **`SPLit_Project_Concept.md`** — краткое описание замысла и функциональности проекта.
-- **`Project_S_Article_ru.md / en.md`** — авторская статья о мотивации, архитектуре и целях проекта (версия для Medium, на русском и английском языках).
+### `concepts/` — Philosophy & Context
+- **`SPLit_Project_Concept.md`** — concise overview of the project idea and functional scope.
+- **`Project_S_Article_en.md / ru.md`** — the Medium-ready article describing the vision, architecture, and personal motivation behind SPLiT (in English and Russian).
 
 ---
 
-### `methods/` — Математическое ядро
+### `methods/` — Mathematical Core
 - **`Mathematical_Methods.md`**  
-  Подробное описание матметодов для аналитических модулей: от фильтрации и оценки риска до оптимизации портфеля и Monte Carlo.
+  Detailed overview of planned analytical modules — from initial filtering and risk assessment to portfolio optimization and Monte Carlo simulation.
 
 ---
 
-## 🔒 Зачем это всё и для кого
+## 🔒 Who This Is For — and Why
 
-Этот репозиторий предназначен для тех, кто рассматривает возможность присоединиться к проекту SPLiT.  
-Здесь собраны материалы, которые помогут:
+This repository is for those considering contributing to SPLiT.  
+The materials here are meant to help you:
 
-- понять идею и философию проекта;
-- оценить глубину проработки;
-- определить, интересно ли принять участие в разработке.
-
----
-
-## 🙋 Что дальше?
-
-Если после ознакомления ты чувствуешь, что проект тебе близок —  
-свяжись со мной, и я открою доступ к основному репозиторию (`dev`-ветка, исходники (которых пока нет), Docker-сборка, ORM, аналитика и пр.).
-
-Если нет — ничего страшного. Спасибо, что потратил время на чтение!
+- understand the philosophy and objectives behind the project;
+- assess the architectural maturity;
+- decide whether you’d like to get involved.
 
 ---
 
-**SPLiT — Этот проект не про хайп. Если вы ищете решений, обещающих быстрый и огромный заработок, то дуйте отсюда дальше — вам не сюда, а мне с вами не по пути.**  
-Я строю надёжную и устойчивую систему не ради быстрой презентации или гранта, а в первую очередь как рабочий инструмент для себя самого, если он ещё кому-то покажется полезным — отлично!
-Если ты думаешь так же — welcome aboard.
+## 🙋 What’s Next?
+
+If you find the project compelling after reading through the docs —  
+[reach out](mailto:mail@pospelkov.com) and I’ll provide access to the main development repository (`dev` branch, source code, Docker setup, ORM layer, analytical logic, etc.).
+
+If not — no hard feelings.  
+Thanks for taking the time to read and explore.
+
+---
+
+**SPLiT isn’t built for hype.**  
+If you’re chasing quick wins and promises of 10x returns, this probably isn’t the project for you — and that’s fine.  
+This is a long-term tool, built slowly and carefully — first and foremost for myself, but if it proves useful to others, all the better.
+
+If you think the same way — welcome aboard.
