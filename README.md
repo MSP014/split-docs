@@ -1,6 +1,6 @@
 # SPLiT — Documentation Repository
 
-This repository contains the core documentation for **SPLiT** — the **Strategic Performance & Long-term Investment Toolkit**.  
+This repository contains the core documentation for **SPLiT** — the **Semantic Portfolio & Logic-driven investment toolkit**.  
 SPLiT is a data-driven assistant designed to support long-term investment decisions.  
 This repo is intended as a first look into the project’s architecture, concept, and methodology.
 
