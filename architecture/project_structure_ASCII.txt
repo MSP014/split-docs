@@ -1,0 +1,131 @@
+/SPLit/
+│
+├── .git/
+├── .idea/
+├── architecture/					# Описание архитектуры проекта
+│	├── C4 Diagrams/
+│	│	├── SPLiT - C4 Diagram - 01 Context Level.md
+│	│	└── SPLiT - C4 Diagram - 02 Container Level.md
+│	└── project_structure.md
+│
+├── concepts/						# Концепт проекта
+│	├── Project_S_Article_en.md
+│	├── Project_S_Article_ru.md
+│	└── SPLit_Project_Concept.md
+│
+├── methods/
+│	└── Mathematical_Methods.md		# Описание матметодов
+├── src/
+│	├── data_inputs/          		# API шлюзы, загрузка файлов
+│	│	├── api_gates/                   # API-шлюзы
+│	│	│   ├── yahoo_api/
+│	│	│   ├── news_api/
+│	│	│   ├── telegram_api/
+│	│	│   ├── youtube_api/
+│	│	│   ├── gmail_api/
+│	│	│   ├── podcast_api/
+│	│	│	├── scraping_api/
+│	│	│	└── other_api/
+│	│	└── file_inputs/                # Обработка пользовательских файлов
+│	│	    ├── downloader/
+│	│	    └── file_service/
+│	├── data_processing/      		# Обработка файлов, оркестрация
+│	│	├── security/                   # Проверка безопасности
+│	│	│   └── security_scanner/
+│	│	│
+│	│	├── routing/                    # Оркестрация
+│	│	│   └── orchestrator/
+│	│	│
+│	│	└── parsing/                    # Обработка данных
+│	│	    ├── pdf_processing/
+│	│	    ├── text_processing/
+│	│	    ├── media_processing/
+│	│	    └── video_processing/       # (будет позже)
+│	│
+│	├── core/                 		# <<< тут начинается "Core"
+│	│   ├── preliminary_analysis/
+│	│   │   ├── news_analysis/
+│	│   │   ├── media_analysis/
+│	│   │   ├── forecast_eval/
+│	│   │   ├── report_analysis/
+│	│	│   └── visual_semantics/       # (будет позже)
+│	│   ├── math_methods/
+│	│   │   ├── 01_init_filter/
+│	│   │   ├── 02_risk_assessment/
+│	│   │   ├── 03_growth_efficiency/
+│	│   │   ├── 04_profit_forecast/
+│	│   │   ├── 05_risk_mitigation/
+│	│   │   ├── 06_breakeven_analysis/
+│	│   │   ├── 07_adv_risk/
+│	│   │   └── 08_final_selection/
+│	│   └── final_correction/
+│	│       ├── analysis_correction/
+│	│       └── rag_memory/
+│	│
+│	├── users_interaction/    		# <<< тут начинается "Users Interaction"
+│	│   ├── user_security/
+│	│   │   ├── auth/
+│	│   │   ├── user_mgmt/
+│	│   │   └── subscription/
+│	│   ├── webface/
+│	│   │   ├── web_ui/
+│	│   │   ├── mobile_app/
+│	│   │   └── assistant/
+│	│   └── backend/
+│	│       ├── strategy_planner/
+│	│       ├── portfolio_mngr/
+│	│       ├── wishlist_mngr/
+│	│       ├── points_mngr/
+│	│       ├── user_intgr/
+│	│       ├── data_viz/
+│	│       └── external_api/
+│	├── utils/                		# Утилиты и инфраструктура
+│	│   ├── event_service/
+│	│   ├── log_service/
+│	│	├── notification_service/
+│	│   ├── semantic_log_analyzer/
+│	│   └── scheduler/
+│   │
+│	├── orm/						# Слой ORM (Peewee)
+│   │	└── models/                
+│	│		│   ├── base.py            		← Database connections & BaseModel
+│	│		│   ├── logs.py            		← split_logs.logs
+│	│		│   ├── events_log.py      		← split_events.events_log
+│	│		│   ├── users.py           		← split_users.users
+│	│		│   ├── portfolios.py      		← split_portfolios.portfolios
+│	│		│   ├── portfolio_items.py 		← split_portfolios.portfolio_items
+│	│		│   ├── portfolio_history.py 	← split_portfolios.portfolio_history
+│	│		│   ├── initial_filtration.py  	← split_math_core.initial_filtration
+│	│		│   └── final_selections.py    	← split_math_core.final_selections
+│   │		│
+│   │		├── data_access/           
+│	│		│   ├── logs_dao.py
+│	│		│   ├── events_dao.py
+│	│		│   ├── users_dao.py
+│	│		│   ├── portfolios_dao.py
+│	│		│   ├── portfolio_items_dao.py
+│	│		│   ├── portfolio_history_dao.py
+│	│		│   ├── initial_filtration_dao.py
+│   │		│   └── final_selections_dao.py
+│   │		│
+│   │		└── users_interaction/      
+│	│		 	└── backend/
+│   │		        └── portfolio_mngr/
+│   │	            └── logic.py   ← imports only DAO functions
+│	│
+│	└── storage	/              		# Скрипты для создания и поддержки БД (MySQL + Qdrant)
+│	    ├── mysql/
+│	    └── qdrant/
+│
+│
+├── tests/               		# (будет позже)
+│
+├── docker/               		# Docker-контейнеры, конфиги
+│	└── mysql
+│
+├── .env
+├── .gitignore
+│
+├── docker-compose.yml
+│
+└── README.md
