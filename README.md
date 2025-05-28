@@ -14,7 +14,9 @@
   - Диаграмма контейнеров для MVP (`Container Level - MVP`)
 
 - **`decisions/`**  
-  Architectural Decision Records (ADR) — ключевые проектные решения.
+  Architectural Decision Records (ADR) — ключевые проектные [решения]([url](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/README.md)).
+
+  Не все из создавались в хронологически обоснованном порядке. В них я отражаю своё видение архитектруных решений, а также, например, [минимальный набор модулей]([url](https://github.com/MSP014/split-docs/blob/main/architecture/decisions/20250528-initial-module-set-for-the-mvp.md)), который будет реализован на старте
 
 - **`project_structure.md / project_structure_ASCII.txt`**  
   Актуальная структура папок и файлов проекта, в том числе с Peewee ORM.
